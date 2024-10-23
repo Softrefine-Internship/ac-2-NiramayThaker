@@ -1,0 +1,150 @@
+.side-nav {
+  width: 8rem;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.side-nav__icns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.side-nav__logo {
+  position: relative;
+  width: 100%;
+  height: 7.9rem;
+  display: grid;
+  place-items: center;
+}
+.side-nav__logo::after {
+  height: 0.1rem;
+  width: 100%;
+  background: #9D9D9D;
+  bottom: 0;
+  left: 0;
+}
+.side-nav-icn {
+  height: 5rem;
+  width: 9rem;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.side-nav-icn:hover {
+  background: #f2ebe1;
+}
+
+.main-logo {
+  width: 100%;
+  height: 5rem;
+}
+
+.nav-icn {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: rgb(79, 75, 75);
+  cursor: pointer;
+}
+
+.question-icn {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.question-icn:hover {
+  fill: rgb(43, 38, 38);
+}
+
+.recent {
+  height: 100%;
+  width: 45%;
+  padding: 2rem 3rem;
+  border: 0.1rem solid red;
+}
+.recent--title {
+  font-size: 1.8rem;
+  color: #373737;
+  margin-bottom: 1.6rem;
+}
+.recent--search {
+  width: 100%;
+  position: relative;
+}
+.recent--search-bar {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5rem;
+  border: 0.1rem solid gray;
+  padding: 2rem 1rem;
+  padding-left: 2.8rem;
+}
+.recent--search-icn {
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  stroke: gray;
+  stroke-width: -10%;
+  top: 1rem;
+  left: 0.8rem;
+}
+
+.folder {
+  height: 100%;
+  width: 20%;
+  background: #f2ebe1;
+}
+.folder__title {
+  width: 100%;
+  padding: 2.4rem;
+  padding-bottom: 1.4rem;
+}
+.folder__title--head {
+  font-size: 2rem;
+}
+.folder__title--sub {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.475);
+}
+
+.separator {
+  background: #9D9D9D;
+  height: 0.15rem;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 62.5%;
+}
+
+img {
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.main-section {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  display: flex;
+}
+
+*::after,
+*::before {
+  content: "";
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */

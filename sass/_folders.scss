@@ -1,0 +1,29 @@
+.folder {
+    height: 100%;
+    width: 20%;
+    background: $bg-folder;
+
+    &__title {
+        // height: 2rem;
+        width: 100%;
+        padding: 2.4rem;
+        padding-bottom: 1.4rem;
+
+        &--head {
+            font-size: 2rem;
+        }
+
+        &--sub {
+            font-size: 1.1rem;
+            color: $light-black
+        }
+    }
+}
+
+
+
+.separator {
+    background: $bg-gray;
+    height: .15rem;
+    width: 100%;
+}
