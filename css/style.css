@@ -94,6 +94,52 @@
   left: 0.8rem;
 }
 
+.project--display {
+  height: 85%;
+  width: 100%;
+  margin-top: 4rem;
+  border: 0.1rem solid red;
+}
+.project--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project--title-main {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #373737;
+}
+.project--title-link {
+  font-size: 1.4rem;
+  color: #F0894D;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.project--title-link:hover {
+  color: red;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+.project--project {
+  margin-top: 2rem;
+  gap: 2rem;
+  height: 50%;
+  width: 100%;
+  border: 0.1rem solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.project--project--sec {
+  height: 100%;
+  width: 45%;
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+}
+.project--project--sec-1 {
+  background: #FCBEA4;
+}
+
 .folder {
   height: 100%;
   width: 20%;
