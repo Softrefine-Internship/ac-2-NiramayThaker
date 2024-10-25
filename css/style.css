@@ -61,11 +61,30 @@
   fill: rgb(43, 38, 38);
 }
 
+.img-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.user-imgs {
+  height: 3.8rem;
+  width: 3.8rem;
+  border-radius: 50%;
+  border: 0.2rem solid #FCBEA4;
+  margin-left: -1.6rem;
+}
+.user-imgs:nth-child(2) {
+  z-index: 1;
+}
+.user-imgs-2 {
+  border: 0.2rem solid #FCE6BD;
+}
+
 .recent {
   height: 100%;
   width: 45%;
   padding: 2rem 3rem;
-  border: 0.1rem solid red;
 }
 .recent--title {
   font-size: 1.8rem;
@@ -98,7 +117,6 @@
   height: 85%;
   width: 100%;
   margin-top: 4rem;
-  border: 0.1rem solid red;
 }
 .project--title {
   display: flex;
@@ -122,11 +140,10 @@
   font-size: 1.1rem;
 }
 .project--project {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   gap: 2rem;
   height: 50%;
   width: 100%;
-  border: 0.1rem solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -134,10 +151,150 @@
   height: 100%;
   width: 45%;
   border-radius: 2rem;
-  padding: 3rem 2rem;
+  padding: 3rem 2.6rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 29px 0px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
 }
-.project--project--sec-1 {
+.project--project--sec:hover {
+  transform: scale(1.05);
+}
+.project--project--sec:first-child {
   background: #FCBEA4;
+}
+.project--project--sec:last-child {
+  background: #FCE6BD;
+}
+.project--project--sec--imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+.project--project--sec--imgs-more {
+  background-color: black;
+  height: 3.8rem;
+  width: 3.8rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  border: 0.2rem solid #FCBEA4;
+  z-index: 2;
+}
+.project--project--sec--imgs-more-2 {
+  color: #000;
+  border: 0.2rem solid #000;
+  background: #FCE6BD;
+}
+.project--project--sec--more-option {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.project--project--sec--name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.project--project--sec--deadline {
+  font-size: 1.1rem;
+}
+.project--project--sec--progress {
+  height: 2%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 6rem;
+  padding: 0 2.6rem;
+}
+.project--project--sec--progress-time {
+  font-style: 1.1rem;
+}
+.project--project--sec--progress-bar {
+  margin-top: 1rem;
+  height: 0.6rem;
+  width: 100%;
+  background: #fa9b73;
+  border-radius: 15rem;
+  position: relative;
+}
+.project--project--sec--progress-bar-2 {
+  background: #f8c15b;
+}
+.project--project--sec--progress-bar-2::after {
+  height: 0.6rem;
+  width: 75%;
+  background: #000;
+  border-radius: 15rem;
+}
+.project--project--sec--progress-bar:before {
+  height: 0.6rem;
+  width: 40%;
+  background: #000;
+  border-radius: 15rem;
+}
+.project-reminder--title {
+  margin: 3rem 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.project-reminder--block {
+  width: 100%;
+  border: 0.1rem solid gray;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-reminder--details {
+  width: 50%;
+}
+.project-reminder--time {
+  font-size: 1.2rem;
+}
+.project-reminder--msg {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #373737;
+}
+.project-reminder--btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 5rem;
+  font-size: 1.2rem;
+  background: #fff;
+  border: 0.1rem dashed #F0894D;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.project-reminder--btn:hover {
+  background: #F0894D;
+}
+.project-reminder--dots {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.project-reminder--dots-dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background: #F0894D;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.project-reminder--dots-dot:not(:first-child) {
+  background: #fad7c3;
+}
+.project-reminder--dots-dot:hover {
+  background: #F0894D;
 }
 
 .folder {
@@ -157,11 +314,61 @@
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.475);
 }
+.folder__structure {
+  padding: 2.6rem 2.4rem;
+}
+.folder__list {
+  margin-bottom: 2rem;
+}
+.folder__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.folder__more-option-icn {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.folder__subtitle {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.folder__subtitle--title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.folder__subtitle--title:not(:last-child) {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.folder__subtitle--title:hover {
+  transform: scale(1.1) translateX(1.6rem);
+}
 
 .separator {
   background: #9D9D9D;
   height: 0.15rem;
   width: 100%;
+}
+
+.manage {
+  height: 100%;
+  width: 28.5%;
+  border: 0.1rem solid red;
+  padding-left: 4rem;
+}
+.manage--more {
+  font-size: 4rem;
+  color: #F0894D;
+  text-align: end;
+  margin-right: 2rem;
+  margin-bottom: 2.4rem;
 }
 
 * {
@@ -173,6 +380,10 @@
 html {
   font-family: "Outfit", sans-serif;
   font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 img {

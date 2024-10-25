@@ -1,0 +1,14 @@
+.manage {
+    height: 100%;
+    width: 28.5%;
+    border: .1rem solid red;
+    padding-left: 4rem;
+
+    &--more {
+        font-size: 4rem;
+        color: $bg-light-brown;
+        text-align: end;
+        margin-right: 2rem;
+        margin-bottom: 2.4rem;
+    }
+}

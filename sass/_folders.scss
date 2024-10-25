@@ -18,6 +18,54 @@
             color: $light-black
         }
     }
+
+    &__structure  {
+        // border: .1rem solid red;
+        padding: 2.6rem 2.4rem;
+    }
+
+    &__list {
+        margin-bottom: 2rem;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    &__more-option {
+
+        &-icn {
+            height: 2rem;
+            width: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    &__subtitle {
+        
+        margin-top: 1rem;
+        margin-left: 2rem;
+
+        &--title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:not(:last-child) {
+                font-weight: normal;
+                margin-bottom: 1rem;
+            }
+
+            &:hover {
+                transform: scale(1.1) translateX(1.6rem);
+            }
+        }
+    }
 }
 
 
