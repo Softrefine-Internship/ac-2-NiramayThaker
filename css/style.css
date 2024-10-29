@@ -272,6 +272,7 @@
   transition: background 0.3s ease-in-out;
 }
 .project-reminder--btn:hover {
+  color: #fff;
   background: #F0894D;
 }
 .project-reminder--dots {
@@ -360,7 +361,6 @@
 .manage {
   height: 100%;
   width: 28.5%;
-  border: 0.1rem solid red;
   padding-left: 4rem;
 }
 .manage--more {
@@ -369,6 +369,181 @@
   text-align: end;
   margin-right: 2rem;
   margin-bottom: 2.4rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+.manage--more:hover {
+  color: #000;
+}
+.manage__user--add-proj {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.manage__user--add-proj-btn {
+  cursor: pointer;
+  height: 4rem;
+  width: 35%;
+  border-radius: 5rem;
+  border: none;
+  background: #F0894D;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  transition: background 0.3s ease-in-out;
+}
+.manage__user--add-proj-btn:hover {
+  background: #000;
+}
+.manage__user--profile {
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+  gap: 2rem;
+}
+.manage__user--profile-photo {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+}
+.manage__user--profile-notification {
+  position: relative;
+}
+.manage__user--profile-notification::after {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50%;
+  top: 0.3rem;
+  right: 0.4rem;
+  background: #F0894D;
+}
+.manage__user--profile-notification-icn {
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+.manage__user--profile-notification-icn:hover {
+  color: gray;
+}
+.manage__user--profile-img {
+  display: flex;
+  gap: 0.5rem;
+}
+.manage__user--profile-user {
+  font-size: 1.1rem;
+  color: gray;
+}
+.manage__user--profile-username {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.manage__user--profile-drop {
+  position: relative;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.manage__user--profile-drop-icn {
+  height: 1.4rem;
+  width: 1.4rem;
+  stroke: #F0894D;
+}
+.manage__user--profile-drop::after {
+  height: 1.8rem;
+  width: 1.8rem;
+  background: rgba(240, 137, 77, 0.15);
+  border-radius: 50%;
+  border: 1px solid rgba(240, 137, 77, 0.4);
+  top: 49%;
+  left: 52.5%;
+  transform: translate(-50%, -50%);
+}
+.manage__user--profile-drop:hover {
+  transform: scale(1.1);
+}
+
+.team {
+  width: 100%;
+  margin-top: 5.5rem;
+}
+.team-heading {
+  font-size: 2rem;
+}
+.team-img {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  align-items: center;
+}
+.team-img-photos {
+  height: 5.3rem;
+  width: 5.3rem;
+  border-radius: 50%;
+}
+.team-img-photos-mt {
+  color: #F0894D;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  background: rgba(240, 137, 77, 0.15);
+  cursor: pointer;
+}
+.team-img-photos-add {
+  cursor: pointer;
+  color: #F0894D;
+  font-size: 2.3rem;
+  text-align: center;
+  border: 2px dashed #F0894D;
+  background: #F2ECE2;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+.team-info {
+  border-radius: 10px;
+  margin-right: 2rem;
+  margin-top: 4rem;
+  padding: 2.5rem 2rem;
+  padding-bottom: 2.9rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 2rem;
+}
+.team-info-sec-title {
+  font-size: 1.2rem;
+  color: gray;
+}
+.team-info-sec-hours {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.daily {
+  width: 100%;
+  margin-top: 4rem;
+}
+.daily-heading {
+  margin-right: 4.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.daily-edit {
+  font-size: 1.6rem;
+  color: #F0894D;
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.daily-edit:hover {
+  color: red;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 
 * {

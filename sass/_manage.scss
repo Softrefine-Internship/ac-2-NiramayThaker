@@ -1,7 +1,6 @@
 .manage {
     height: 100%;
     width: 28.5%;
-    border: .1rem solid red;
     padding-left: 4rem;
 
     &--more {
@@ -10,5 +9,222 @@
         text-align: end;
         margin-right: 2rem;
         margin-bottom: 2.4rem;
+        cursor: pointer;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: #000;
+        }
     }
+
+    &__user {
+        
+        &--add-proj {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-btn {
+                cursor: pointer;
+                height: 4rem;
+                width: 35%;
+                border-radius: 5rem;
+                border: none;
+                background: $bg-light-brown;
+                color: #fff;
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+                transition: background .3s ease-in-out;
+
+                &:hover {
+                    background: #000;
+                }
+            }
+        }
+
+        &--profile {
+            display: flex;
+            align-items: center;
+            margin-right: 2.5rem;
+            gap: 2rem;
+
+            &-photo {
+                height: 3.2rem;
+                width: 3.2rem;
+                border-radius: 50%;
+            }
+
+            &-notification
+            {
+                position: relative;
+
+                &::after {
+                    height: .6rem;
+                    width: .6rem;
+                    border-radius: 50%;
+                    top: .3rem;
+                    right: .4rem;
+                    background: $bg-light-brown;
+                }
+
+                &-icn {
+                    height: 2.4rem;
+                    width: 2.4rem;
+                    cursor: pointer;
+                    transition: color .2s ease-in-out;
+
+                    &:hover {
+                        color: gray;
+                    }
+                }
+            }
+
+            &-img {
+                display: flex;
+                gap: .5rem;
+            }
+
+            &-user {
+                font-size: 1.1rem;
+                color: gray;
+            }
+
+            &-username {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+
+            &-drop {
+                position: relative;
+                display: grid;
+                place-items: center;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                
+                &-icn {
+                    height: 1.4rem;
+                    width: 1.4rem;
+                    stroke: $bg-light-brown;
+                }
+
+                &::after {
+                    height: 1.8rem;
+                    width: 1.8rem;
+                    background: rgba($bg-light-brown, 0.15);
+                    border-radius: 50%;
+                    border: 1px solid rgba($bg-light-brown, 0.4);
+                    top: 49%;
+                    left: 52.5%;
+                    transform: translate(-50%, -50%);
+
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+    }
+}
+
+
+.team {
+    width: 100%;
+    margin-top: 5.5rem;
+
+    &-heading {
+        font-size: 2rem;
+    }
+
+    &-img {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2rem;
+        align-items: center;
+        
+        &-photos {
+            height: 5.3rem;
+            width: 5.3rem;
+            border-radius: 50%;
+
+            &-mt {
+                color: $bg-light-brown;
+                font-size: 2rem;
+                display: grid;
+                place-items: center;
+                background: rgba($bg-light-brown, 0.15);
+                cursor: pointer;
+            }
+            
+            &-add {
+                cursor: pointer;
+                color: $bg-light-brown;
+                font-size: 2.3rem;
+                // display: grid;
+                // place-items: center;
+                text-align: center;
+                border: 2px dashed $bg-light-brown;
+                background: $bg-white;
+                height: 3.2rem;
+                width: 3.2rem;
+            }
+        }
+    }
+
+    &-info {
+        border-radius: 10px;
+        margin-right: 2rem;
+        margin-top: 4rem;
+        padding: 2.5rem 2rem;
+        padding-bottom: 2.9rem;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 2rem;
+
+        &-sec {
+            
+            &-title {
+                font-size: 1.2rem;
+                color: gray;
+            }
+
+            &-hours {
+                font-size: 1.8rem;
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }    
+}
+
+.daily {      
+    width: 100%;
+    margin-top: 4rem;
+    
+    &-heading {
+        margin-right: 4.5rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-edit {
+        font-size: 1.6rem;
+        color: $bg-light-brown;
+        font-weight: normal;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+            
+        &:hover {
+            color: red;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+        }
+    }
+
+
 }
