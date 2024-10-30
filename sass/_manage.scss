@@ -226,5 +226,127 @@
         }
     }
 
+    &--cards {
 
+        &-container {
+            margin-top: 2rem;
+            // height: 10rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 2rem;
+            padding-right: 2.1rem;
+            gap: 15px;
+        }
+
+        &-card {
+            // border: 1px solid red;
+            border-radius: 1rem;
+            height: 12.5rem;
+            width: 48%;
+            box-shadow: rgba(100, 100, 111, 0.2) 2px 7px 29px 0px;
+            cursor: pointer;
+            position: relative;
+
+            &-1 {
+                background: #f2ebe1;
+
+                &-add {
+                    font-size: 1.6rem;
+                    padding-top: 3.5rem;
+                    padding-left: 2rem;
+
+                    &::before {
+                        content: "+";
+                        bottom: 1.5rem;
+                        right: 2rem;
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            &-2 {
+                padding: 1.5rem;
+
+                &-tag {
+                    text-align: end;
+                    font-size: 1.2rem;
+                    margin-bottom: 1.2rem;
+                    font-weight: bold;
+                    position: relative;
+                    margin-right: 2rem;
+                    
+                    &::before {
+                        margin-left: .8rem;
+                        height: 1rem;
+                        width: 1rem;
+                        background: lighten(red, 15%);
+                        border-radius: 50%;
+                        top: 3px;
+                        left: 65%;
+                    }
+
+                    &::after {
+                        margin-left: .8rem;
+                        height: .8rem;
+                        width: .8rem;
+                        border: 1px solid $bg-light-brown;
+                        border-radius: 2px;
+                        top: 3px;
+                    }
+
+                    &-2 {
+                        &::before {
+                            background: lighten(cyan, 15%);
+                            left: 35%;
+                        }
+                    }
+                    
+                    &-3 {
+                        &::before {
+                            background: white;
+                            left: 60%;
+                        }
+
+                        &::after {
+                            margin-left: .8rem;
+                            height: 1.2rem;
+                            width: 1.2rem;
+                            background: #000;
+                            border-radius: 2px;
+                            top: 2px;
+                            background-image: url(../img/down.png);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center center; 
+                        }
+                    }
+
+                }
+
+                &-title {
+                    width: 70%;
+                    font-size: 1.6rem;
+                    margin-right: 4rem;
+                    
+                }
+            }
+        }
+    }
+
+}
+
+.title-3 {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title-4 {
+    width: 60%;
+    color: #f2ebe1;
+}
+
+.--last-card-bg {
+    background: $bg-light-brown;
 }
