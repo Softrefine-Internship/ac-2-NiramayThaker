@@ -3,6 +3,26 @@
     width: 20%;
     background: $bg-folder;
 
+    @media (max-width: 1410px) {
+        width: 18%;
+    }
+
+    @media (max-width: 1550px) {
+        width: 22%;
+    } 
+
+    @media (max-width: 1251px) {
+        width: 20%;
+    }
+
+    @media (max-width: 1151px) {
+        width: 20%;
+    }
+
+    @media (max-width: 1111px) {
+        display: none;
+    }
+
     &__title {
         // height: 2rem;
         width: 100%;
@@ -11,11 +31,27 @@
 
         &--head {
             font-size: 2rem;
+
+            @media (max-width: 1111px) {
+                font-size: 2.8rem;
+            }
         }
 
         &--sub {
             font-size: 1.1rem;
-            color: $light-black
+            color: $light-black;
+
+            @media (max-width: 1550px) {
+                font-size: 1.3rem;
+            } 
+
+            @media (max-width: 1180px) {
+                font-size: 1.4rem;
+            }
+
+            @media (max-width: 1111px) {
+                font-size: 2rem;
+            }
         }
     }
 
@@ -64,11 +100,61 @@
             &:hover {
                 transform: scale(1.1) translateX(1.6rem);
             }
+            @media (max-width: 1111px) {
+                font-size: 1.8rem;
+            }
         }
     }
 }
 
+.folder__subtitle {
+    display: none;
+}
+  
+.folder__name {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    @media (max-width: 1111px) {
+        font-size: 2.4rem;
+    }
+}
+  
+.folder__toggle {
+    display: none;
+}
+
+.folder__toggle:checked + .folder__name + .folder__subtitle {
+    display: block;
+    transition: all .3s ease-in-out;
+}
+
+.folder__toggle:checked + .folder__name .folder__more-option .folder__more-option-icn {
+    transform: rotate(180deg); 
+    transition: transform 0.3s ease;
+}
+
+.folder__subtitle {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.folder__subtitle--title {
+    margin: 5px 0;
+}
+
+.folder__more-option {
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.folder__more-option-icn {
+    transform-origin: center;
+}  
 
 .separator {
     background: $bg-gray;

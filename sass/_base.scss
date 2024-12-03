@@ -7,6 +7,22 @@
 html {
     font-family: "Outfit", sans-serif;
     font-size: 62.5%;
+
+    @media (max-width: 1550px) {
+        font-size: 56.25%;
+    }
+
+    @media (max-width: 1180px) {
+        font-size: 50%;
+    }
+
+    @media (max-width: 1050px) {
+        font-size: 48%;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 45%;
+    }
 }
 
 body {
@@ -23,6 +39,7 @@ img {
     width: 100vw;
     background: #fff;
     display: flex;
+    justify-content: space-between;
 }
 
 *::after,
@@ -30,3 +47,4 @@ img {
     content: "";
     position: absolute;
 }
+

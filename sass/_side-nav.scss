@@ -8,6 +8,14 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 1300px) {
+        width: 6.5rem;
+    }   
+
+    @media (max-width: 990px) {
+        width: 5rem;
+    }   
+
     &__icns {
         display: flex;
         flex-direction: column;
@@ -21,12 +29,29 @@
         display: grid;
         place-items: center;
 
+        @media (max-width: 1550px) {
+            height: 8.2rem;
+        }
+
+        @media (max-width: 1180px) {
+            height: 8.3rem;
+        }
+        
         &::after {
             height: .1rem;
             width: 100%;
             background: $bg-gray;
             bottom: 0;
             left: 0;
+
+            @media (max-width: 1180px) {
+                height: 8.2rem;
+                height: .2rem;
+            }
+
+            @media (max-width: 1111px) {
+                display: none;
+            }
         }
     }
 
