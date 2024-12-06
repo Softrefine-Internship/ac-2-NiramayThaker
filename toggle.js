@@ -46,7 +46,7 @@ window.addEventListener("resize", function () {
       detailsSection.style.display = "block";
     } 
 
-    else if (window.innerWidth > 990) {
+    else if (window.innerWidth > 800) {
       menuSection.style.display = "none";
       projectsSection.style.display = "block";
       detailsSection.style.display = "block";
@@ -54,16 +54,15 @@ window.addEventListener("resize", function () {
 
     else if (window.innerWidth > 768) {
       menuSection.style.display = "none";
-      projectsSection.style.display = "block";
       detailsSection.style.display = "none";
+      projectsSection.style.display = "block";
     } 
 
-    // else {
-    //   menuSection.style.display = "none";
-    //   projectsSection.style.display = "none";
-    //   detailsSection.style.display = "flex";
-    // }
+    else {
+      menuSection.style.display = "none";
+      projectsSection.style.display = "block";
+      detailsSection.style.display = "none";
+    }
 
     });
-
 });

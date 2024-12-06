@@ -1,10 +1,16 @@
 .manage {
-    height: 100%;
+    height: 100vh;
     width: 28.5%;
     padding-left: 4rem;
     padding-right: 2.5rem;
     background-color: #fcfcfc;
     box-shadow: rgba(149, 157, 165, 0.18) 0px 2px 29px;
+    overflow-y: scroll;
+
+    
+    &::-webkit-scrollbar {
+        display: none;;
+    }
 
     @media (max-width: 1410px) {
         width: 31%;
@@ -15,13 +21,21 @@
         padding-left: 2.5rem;
     }
 
-    @media (max-width: 111px) {
+    @media (max-width: 1251px) {
+        width: 34%;
+    }
+
+    @media (max-width: 1151px) {
+        width: 34%;
+    }
+
+    @media (max-width: 1111px) {
         width: 50%;
     }
 
-    // @media (max-width: 990px) {
-    //     display: none;
-    // }
+    @media (max-width: 800px) {
+        display: none;
+    }
     
     &--more {
         font-size: 4rem;
@@ -212,6 +226,11 @@
                 width: 6.3rem;
             } 
 
+            @media (max-width: 450px) {
+                height: 4.3rem;
+                width: 4.3rem;
+            } 
+
             &-mt {
                 color: $bg-light-brown;
                 font-size: 2rem;
@@ -256,7 +275,7 @@
                 @media (max-width: 1550px) {
                     font-size: 1.4rem;
                     margin-bottom: .5rem;
-                }   
+                }
             }
 
             &-hours {
@@ -273,11 +292,14 @@
     margin-top: 4rem;
     
     &-heading {
-        margin-right: 4.5rem;
         font-size: 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 1111px) {
+            padding: 0 1.5rem;
+        }
     }
 
     &-edit {
@@ -302,21 +324,25 @@
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 2rem;
-            padding-right: 2.1rem;
+            // padding-right: 2.1rem;
             gap: 15px;
-            justify-content: center;
+            justify-content: space-between;
 
             @media (max-width: 1111px) {
                 padding: 2rem;
             }
-
+            
+            @media (max-width: 800px) {
+                padding: 1rem;
+                margin-top: .5rem;
+            }
         }
 
         &-card {
             // border: 1px solid red;
             border-radius: 1rem;
-            height: 12.8rem;
-            width: 47%;
+            height: 14rem;
+            width: 45%;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             cursor: pointer;
             position: relative;
@@ -327,18 +353,18 @@
             //     width: 47%;
             // }
 
-            @media (max-width: 1180px) {
-                height: 15.6rem;
-                width: 45%;
-            }
+            // @media (max-width: 1180px) {
+            //     height: 15.6rem;
+            //     width: 45%;
+            // }
 
-            @media (max-width: 990px) {
-                height: 11rem;
+            @media (max-width: 800px) {
+                height: 15rem;
                 width: 100%;
             }
 
             &:hover {
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                transform: scale(1.08);
             }
 
             &-1 {
@@ -381,7 +407,7 @@
                         background: lighten(red, 15%);
                         border-radius: 50%;
                         top: 3px;
-                        left: 67%;
+                        right: 23%;
 
                         @media (max-width: 1260px) {
                             left: 62%;
@@ -406,7 +432,7 @@
                     &-2 {
                         &::before {
                             background: lighten(cyan, 15%);
-                            left: 42%;
+                            right: 50%;
 
                             @media (max-width: 1360px) {
                                 left: 32%;
@@ -428,7 +454,7 @@
 
                         &::before {
                             background: white;
-                            left: 65%;
+                            right: 30%;
 
                             @media (max-width: 1260px) {
                                 left: 55%;
